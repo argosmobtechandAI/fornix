@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --hanuman-50: #fff7ed;
+  --hanuman-100: #ffedd5;
+  --hanuman-200: #fed7aa;
+  --hanuman-300: #fdba74;
+  --hanuman-400: #fb923c;
+  --hanuman-500: #f97316;
+  --hanuman-600: #ea580c;
+  --hanuman-700: #c2410c;
+  --hanuman-800: #9a3412;
+  --hanuman-900: #7c2d12;
+  --hanuman-rgb-700: 194, 65, 12;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+button , a {
+  cursor: pointer !important;
+} 
+input:focus, select:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--foreground) !important;
+}   
+textarea:focus {
+  outline: none !important;
+  box-shadow: unset !important;
+}
+:root {
+  --accent: #f77f00;
+  --accent-strong: #d36800;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 70%, transparent);
+  color: #fff;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #fff7ec 0%, #ffe8cc 100%);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ffb347 0%, #f77f00 60%, #d36800 100%);
+  border-radius: 9999px;
+  border: 2px solid #fff7ec;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ffc56d 0%, #ff9100 60%, #d36800 100%);
+}
+
+/* Global override: map old blue utilities to Hanuman saffron palette */
+.text-blue-100 { color: var(--hanuman-100) !important; }
+.text-blue-200 { color: var(--hanuman-200) !important; }
+.text-blue-300 { color: var(--hanuman-300) !important; }
+.text-blue-400 { color: var(--hanuman-400) !important; }
+.text-blue-600 { color: var(--hanuman-700) !important; }
+.text-blue-700 { color: var(--hanuman-800) !important; }
+.text-blue-800 { color: var(--hanuman-800) !important; }
+.text-blue-900 { color: var(--hanuman-900) !important; }
+.dark .text-blue-300 { color: var(--hanuman-200) !important; }
+.dark .text-blue-400 { color: var(--hanuman-300) !important; }
+.dark .text-blue-600 { color: var(--hanuman-400) !important; }
+.dark .text-blue-700 { color: var(--hanuman-400) !important; }
+.dark .text-blue-900 { color: var(--hanuman-200) !important; }
+
+.bg-blue-50 { background-color: var(--hanuman-50) !important; }
+.bg-blue-100 { background-color: var(--hanuman-100) !important; }
+.bg-blue-200 { background-color: var(--hanuman-200) !important; }
+.bg-blue-500 { background-color: var(--hanuman-500) !important; }
+.bg-blue-600 { background-color: var(--hanuman-600) !important; }
+.bg-blue-700 { background-color: var(--hanuman-700) !important; }
+.bg-blue-900\/20 { background-color: rgba(var(--hanuman-rgb-700), 0.2) !important; }
+.dark .bg-blue-900\/20 { background-color: rgba(var(--hanuman-rgb-700), 0.2) !important; }
+.dark .bg-blue-900\/30 { background-color: rgba(var(--hanuman-rgb-700), 0.3) !important; }
+
+.border-blue-100 { border-color: var(--hanuman-100) !important; }
+.border-blue-200 { border-color: var(--hanuman-200) !important; }
+.border-blue-300 { border-color: var(--hanuman-300) !important; }
+.border-blue-800 { border-color: var(--hanuman-800) !important; }
+
+.from-blue-500 { --tw-gradient-from: var(--hanuman-600) !important; --tw-gradient-to: rgb(249 115 22 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.from-blue-600 { --tw-gradient-from: var(--hanuman-700) !important; --tw-gradient-to: rgb(234 88 12 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.from-blue-900 { --tw-gradient-from: var(--hanuman-900) !important; --tw-gradient-to: rgb(124 45 18 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.from-indigo-600 { --tw-gradient-from: var(--hanuman-700) !important; --tw-gradient-to: rgb(234 88 12 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.from-indigo-700 { --tw-gradient-from: var(--hanuman-800) !important; --tw-gradient-to: rgb(154 52 18 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+.to-blue-600 { --tw-gradient-to: var(--hanuman-600) !important; }
+.to-blue-700 { --tw-gradient-to: var(--hanuman-700) !important; }
+.to-indigo-600 { --tw-gradient-to: var(--hanuman-700) !important; }
+.to-indigo-700 { --tw-gradient-to: var(--hanuman-800) !important; }
+
+.accent-blue-500 { accent-color: var(--hanuman-500) !important; }
+.focus\:ring-blue-500:focus { --tw-ring-color: var(--hanuman-500) !important; }
+.hover\:text-blue-600:hover { color: var(--hanuman-700) !important; }
+.hover\:text-blue-700:hover { color: var(--hanuman-800) !important; }
+.hover\:bg-blue-50:hover { background-color: var(--hanuman-50) !important; }
+.hover\:bg-blue-100:hover { background-color: var(--hanuman-100) !important; }
+.hover\:bg-blue-900\/20:hover { background-color: rgba(var(--hanuman-rgb-700), 0.2) !important; }

@@ -1,0 +1,356 @@
+country,code,courses,college,city,type
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,University of Gyumri Faculty of Medicine,Gyumri,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,Armenian Medical Institute Faculty of Medicine,Yerevan,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,Armenian-Russian International University 'Mkhitar Gosh',Yerevan,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,Erebuni Medical Academy Foundation,Yerevan,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,St. Tereza Medical University,Yerevan,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,Yerevan Gladzor University Faculty of Medicine,Yerevan,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,Yerevan Haybusak University Faculty of Medicine,Yerevan,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,Yerevan State Medical University Named for Mkhitar Heratsi,Yerevan,university
+Armenia,AM,AMC|PLAB|FMGE/NExT|NEET PG,Yerevan University of Traditional Medicine,Yerevan,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Abdul Malek Ukil Medical College,Noakhali,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Ad-din Akij Medical College (AAMC),Khulna,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Ad-din Sakina Women’s Medical College,Jashore,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Ad-din Women's Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Aichi Medical College,Demra,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Anwer Khan Modern Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Armed Forces Medical College (AFMC),Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Army Medical College Bogura,Bogura,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Army Medical College Chattogram,Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Army Medical College Cumilla,Cumilla,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Army Medical College Jashore,Jessore,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Army Medical College Rangpur,Rangpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Ashiyan Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,B.G.C. Trust Medical College,Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Bangladesh Medical College (BMSRI),Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Bangladesh Medical University,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Barind Medical College and Hospital,Rajshahi,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Bashundhara Ad-din Medical College,Keraniganj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Bikrampur Bhuiyan Medical College,Damla,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Brahmanbaria Medical College,Brahmanbaria,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Pabna Medical College,Pabna,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Southern Medical College & Hospital,Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,CARe Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,"Central Medical College, Comilla",Comilla,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Chattagram International Medical College and Hospital,Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Chattagram Maa-O-Shishu Hospital Medical College,Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Chittagong Medical College and Hospital,Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,"City Medical College, Gazipur",Gazipur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Comilla Medical College & Hospital,Comilla,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,"Community Based Medical College, Bangladesh (CBMCB)",Mymensingh,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Cox's Bazar Medical College,Cox's Bazar,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Delta Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Dhaka Central International Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Dhaka Community Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Dhaka Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Dhaka National Medical College & Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Diabetic Association Medical College,Faridpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Dinajpur Medical College,Dinajpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Dr. Sirajul Islam Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,East West Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,"Eastern Medical College, Comilla",Comilla,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Enam Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Faridpur Medical College,Faridpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Gazi Medical College,Khulna,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Gonoshasthaya Samaj Vittik Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Gopalgonj Medical College,Gopalganj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Green Life Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,"Habiganj Medical College, Habiganj",Habiganj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Holy Family Red Crescent Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Ibn Sina Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Ibrahim Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Institute of Applied Health Sciences (IAHS),Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,International Medical College,Gazipur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Islami Bank Medical College,Rajshahi,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Jahurul Islam Medical College & Hospital,Kishoreganj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Jalalabad Ragib-Rabeya Medical College,Sylhet,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Jamalpur Medical College,Jamalpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Jashore Medical College,Jashore,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Khulna City Medical College,Khulna,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Khulna Medical College,Khulna,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Khwaja Yunus Ali Medical College,Sirajgonj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Kumudini Women's Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Kushtia Medical College,Kushtia,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,M.H. Samorita Hospital and Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Magura Medical College,Magura,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Mainamoti Medical College,Comilla,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Manikganj Medical College,Manikganj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Marine City Medical College & Hospital,Chittagong,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Marks Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Medical College for Women & Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Monno Medical College,Monno City,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Monowara Sikder Medical College,Bhedergonj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Mugda Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Mymensingh Medical College,Mymensingh,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Naogaon Medical College,Naogaon,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Netrokona Medical College,Netrokona,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Nilphamari Medical College,Nilphamari,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,North Bengal Medical College,Sirajgonj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,North East Medical College,Sylhet,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Northern International Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Northern Private Medical College,Rangpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Parkview Medical College,Sylhet,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Patuakhali Medical College,Patuakhali,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Popular Medical College and Hospital,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,President Abdul Hamid Medical College and Hospital,Kishoreganj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Prime Medical College,Rangpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Rajshahi Medical College & Hospital,Rajshahi,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Rangamati Medical College,Rangamati,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Rangpur Community Medical College,Rangpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Rangpur Medical College,Rangpur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Satkhira Medical College,Satkhira,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Shahabuddin Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Shaheed M. Monsur Ali Medical College Sirajganj,Sirajganj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Shaheed Monsur Ali Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Shaheed Suhrawardy Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Shaheed Syed Nazrul Islam Medical College,Kishoregonj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Shaheed Tajuddin Ahmad Medical College,Gazipur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Shaheed Ziaur Rahman Medical College,Bogra,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Sher-E-Bangla Medical College,Barisal,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Sir Salimullah Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Sylhet M.A.G. Osmani Medical College,Sylhet,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Sylhet Women's Medical College and Hospital,Sylhet,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,T.M.S.S. Medical College,Bogra,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Tairunnessa Memorial Medical College and Hospital,Gazipur,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Tangail Medical College,Tangail,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Universal Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,US-Bangla Medical College and Hospital,Rupgonj,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Uttara Adhunik Medical College,Dhaka,university
+Bangladesh,BD,AMC|PLAB|FMGE/NExT|NEET PG,Zainul Haque Sikder Women's Medical College & Hospital,Dhaka,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,American University of Barbados School of Medicine,St. Michael,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,American University of Integrative Sciences School of Medicine,St. Michael,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,Bridgetown International University School of Medicine,St. Michael,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,International University of Barbados School of Medicine,Welches,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,Queen's University College of Medicine,St. John,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,Ross University School of Medicine,St. Michael,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,University of the West Indies at Cave Hill Faculty of Medical Sciences,Cave Hill,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,Victoria University of Barbados School of Medicine,St. Michael,university
+Barbados,BB,AMC|PLAB|FMGE/NExT|NEET PG,Washington University of Barbados School of Medicine,St. Philip,university
+Belarus,,AMC|PLAB|FMGE/NExT|NEET PG,Belarusian State Medical University,Minsk,university
+Belarus,,AMC|PLAB|FMGE/NExT|NEET PG,Gomel State Medical University,Gomel,university
+Belarus,,AMC|PLAB|FMGE/NExT|NEET PG,Grodno State Medical University,Grodno,university
+Belarus,,AMC|PLAB|FMGE/NExT|NEET PG,Vitebsk State Medical University,Vitebsk,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,American Northwest University,Belmopan,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Avicina Medical Academy,Belmopan,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Central America Health Sciences University Belize Medical College,Ladyville,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Columbus Central University School of Medicine,Ladyville,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Efhre International University,Belize City,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Grace University School of Medicine (Belize),Belmopan,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Hope University School of Medicine,Belmopan,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,InterAmerican Medical University,Corozal,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Medical University of the Americas (Belize),Ambergris Caye,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,St. Luke's University School of Medicine,Belize City,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,St. Matthew's University School of Medicine (Belize),San Pedro,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,University of Belize School of Medicine,Belmopan City,university
+Belize,BZ,AMC|PLAB|FMGE/NExT|NEET PG,Washington University of Health and Sciences,San Pedro,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Academy of Military Medical Sciences Faculty of Medicine,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Air Force Medical University,Xi'an,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Anhui Medical University,Hefei,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Anhui University of Science and Technology College of Medicine,Huainan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Army Medical University,Chongqing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Baotou Medical College, Inner Mongolia University of Science and Technology",Baotou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Beihua University School of Medicine,Jilin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Beijing College of Acupuncture and Orthopedics,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Beijing Medical College Branch Campus,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Beijing School of Medicine,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Beijing Second Medical College, First Branch",Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Bengbu Medical College,Bengbu,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Binzhou Medical University,Binzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Capital Medical University,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Changchun University of Chinese Medicine,Changchun,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Changsha Medical University,Changsha,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Changzhi Medical College,Changzhi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Chengde Medical University,Chengde,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Chengdu Medical College,Chengdu,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Chengdu University of Traditional Chinese Medicine,Chengdu,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Chengdu University School of Medicine and Nursing,Chengdu,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Chifeng University Medical College,Chifeng,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,China Academy of Chinese Medical Sciences,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,China Medical University,Shenyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Chinese University of Hong Kong, Shenzhen",Shenzhen,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Chongqing Medical University,Chongqing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,College of Basic Medical Sciences of Jilin University,Changchun,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Dali University School of Medicine,Dali,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Dalian Medical University,Dalian,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,First Medical College of the Navy,Qingdao,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Fujian Medical University,Fuzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Fujian University of Traditional Chinese Medicine,Fuzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Gannan Medical University,Ganzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Gansu University of Chinese Medicine,Lanzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guangdong Medical University,Zhanjiang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guangdong Pharmaceutical University,Guangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guangdong Provincial Cardiovascular Institute,Guangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guangxi Medical University,Nanning,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guangxi University of Chinese Medicine,Nanning,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guangzhou Medical University,Guangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guangzhou University of Chinese Medicine,Guangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guilin Medical University,Guilin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Guizhou Medical University,Guiyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hainan Medical University,Haikou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hangzhou Medical College,Hangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Hangzhou School of Medicine, Hangzhou Normal University",Hangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Harbin Medical University,Harbin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,He University,Shenyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hebei College of Traditional Chinese Medicine,Shijiazhuang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hebei Medical University,Shijiazhuang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hebei North University Faculty of Medicine,Zhangjiakou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hebei University Medical College,Baoding,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hebei University of Engineering School of Medicine,Handan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Henan Medical University,Xinxiang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Henan University of Chinese Medicine,Zhengzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Henan University of Science and Technology School of Medicine,Luoyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Henan University School of Medicine,Kaifeng,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Huanghe Science and Technology College,Zhengzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hubei Minzu University Medical School,Enshi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hubei Polytechnic University School of Medicine,Huangshi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hubei University of Arts and Science Medical College,Xiangyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hubei University of Medicine,Shiyan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hubei University of Science and Technology Faculty of Medicine,Xianning,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hunan Normal University College of Medicine,Changsha,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Hunan University of Chinese Medicine,Changsha,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Huzhou University School of Medicine and Nursing,Huzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Inner Mongolia Medical University,Hohhot,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Inner Mongolia University for the Nationalities,Tong-Liao,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jiamusi University School of Medicine,Jiamusi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jianghan University School of Medicine,Wuhan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jiangnan University Wuxi Medical College,Wuxi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jiangsu University School of Medicine,Zhenjiang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jiangxi Medical College of Nanchang University,Nanchang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jiaxing University College of Medicine,Jiaxing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jiaying University Medical College,Meizhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jilin Medical University,Jilin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jinan University School of Medicine,Guangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jinggangshan University Medical School,Ji'an,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jining Medical University,Jining,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jinzhou Medical University,Jinzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jishou University School of Medicine,Jishou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jiujiang University Medical College,Jiujiang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Jixi Medical School for the Coal Industry,Jixi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Kunming Medical University,Kunming,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Kunming University of Science and Technology Medical School,Kunming,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Lanzhou University Health Science Center,Lanzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Medical College of China Three Gorges University,Yichang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Medical College of Dalian University,Dalian,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Medical College of Wuhan University of Science and Technology,Wuhan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Medical College of Yan'an University,Yan'an,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Medical School, Nanjing University",Nanjing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Mudanjiang Medical University,Mudanjiang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Nanjing Medical University,Nanjing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Nanjing University of Chinese Medicine,Nanjing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Nankai University School of Medicine,Tianjin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Nantong University Medical School,Nantong,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Nantong University Xinglin College Faculty of Medicine,Nantong,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Naval Medical University,Shanghai,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Navy School of Medicine,Nanjing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Ningbo University Health Science Centre,Ningbo,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Ningxia Medical University,Yinchuan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,North China University of Science and Technology College of Medicine,Tangshan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,North Sichuan Medical College,Nanchong,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Northwest Minzu University,Lanzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Panzhihua University School of Medical Science,Panzhihua,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Peking Union Medical College,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Peking University Health Science Center,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Putian University School of Medicine,Putian,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Qilu Medical University,Zibo,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Qingdao University Qingdao Medical College,Qingdao,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Qinghai University Medical College,Xining,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Qiqihar Medical University,Qiqihar,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Sanquan Medical College,Xinxiang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"School of Life Sciences, Fudan University",Shanghai,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"School of Medicine, General Logistics Department",Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shaanxi University of Chinese Medicine,Xianyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shandong First Medical University,Tai'an,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shandong Second Medical University,Weifang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shandong University Cheeloo College of Medicine,Jinan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shandong University of Traditional Chinese Medicine,Jinan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shanghai Jiao Tong University School of Medicine,Shanghai,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Shanghai Medical College, Fudan University",Shanghai,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shanghai School of Medicine,Shanghai,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shantou University Medical College,Shantou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shanxi Datong University School of Medicine,Datong,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shanxi Medical University,Taiyuan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shaoxing University Medical College,Shaoxing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shenyang Medical College,Shenyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shenzhen University College of Medicine,Shenzhen,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Shihezi University School of Medicine,Shihezi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Soochow University Medical College,Suzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Southeast University Medical College,Nanjing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Southern Medical University,Guangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Southwest Medical University,Luzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Sun Yat-sen University School of Medicine,Shenzhen,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Taizhou University Medical School,Taizhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Tianjin Medical University Clinical Medical College,Tianjin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Tianjin Medical University School of Basic Medical Sciences,Tianjin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Tianjin Second Medical College,Tianjin,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Tibet University Medical College,Lhasa,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Tongji Medical College of Huazhong University of Science & Technology,Wuhan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Tongji University School of Medicine,Shanghai,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Tsinghua University School of Medicine,Beijing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,University of South China Faculty of Medicine,Hengyang,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Wannan Medical College,Wuhu,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Wenzhou Medical University,Wenzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"West China School of Medicine, Sichuan University",Chengdu,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Wuhan University School of Medicine,Wuhan,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Xi'an Jiaotong University College of Medicine,Xi'an,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Xi'an Medical University,Xi'an,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Xiamen University School of Medicine,Xiamen,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Xiangnan University School of Medicine,Chenzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Xiangya School of Medicine, Central South University",Changsha,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Xinjiang College of Traditional Chinese Medicine,Urumqi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Xinjiang Medical University,Urumqi,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Xuzhou Medical University,Xuzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Yanbian University Health Science Center,Yanji,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Yangtze University Medical School,Jingzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Yangzhou University College of Medicine,Yangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Yichun University School of Medicine,Yichun,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Yishui Medical School,Yishui,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Youjiang Medical University for Nationalities,Baise,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Yuzhou University School of Medicine,Chongqing,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Zhejiang Chinese Medical University,Hangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Zhejiang University,Hangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Zhengzhou University Medical School,Zhengzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,"Zhongshan School of Medicine, Sun Yat-Sen University",Guangzhou,university
+China,CN,AMC|PLAB|FMGE/NExT|NEET PG,Zunyi Medical University,Zunyi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Akaki Tsereteli State University Faculty of Medicine,Kutaisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Alte University School of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Avicenna - Batumi Medical University,Batumi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Batumi Shota Rustaveli State University Faculty of Education and Science,Batumi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,BAU International University Faculty of Medicine,Batumi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Caucasus International University Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Caucasus Medicine School,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Central University of Europe Faculty of Medicine,Kutaisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Classical and Traditional Medicine Academy,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Critical Care Medicine Institute,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,David Aghmashenebeli University of Georgia Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,David Tvildiani Medical University AIETI Medical School,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,East European University Faculty of Healthcare Sciences,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,East-West University School of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,European University Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Georgian American University,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Georgian National University SEU Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Grigol Robakidze University School of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Ilia State University Faculty of Natural Sciences and Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,International Black Sea University School of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,International University of Tbilisi School of Health,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Ivane Javakhishvili Tbilisi State University Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Ken Walker International University Faculty of Medicine and Stomatology,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Kutaisi Institute of Medicine,Kutaisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Medical Institute of Reconstruction Plastic Surgery and Dermocosmetology,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,New Vision University School of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Petre Shotadze Tbilisi Medical Academy Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Quality Control Teaching University of Georgia,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Tbilisi Humanitarian Teaching University Faculty of Health,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Tbilisi Medical Institute 'Vita',Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Tbilisi Medical Teaching University 'Hippocrates',Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Tbilisi National University 'Gaenati',Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Tbilisi State Medical University Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,Tbilisi University 'Metekhi',Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,University Geomedi LLC Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,University of Georgia School of Health Sciences,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,University of Legia and Company Faculty of Medicine,Tbilisi,university
+Georgia,GE,AMC|PLAB|FMGE/NExT|NEET PG,University Sakartvelo Faculty of Medicine,Tbilisi,university
+Hong Kong,HK,AMC|PLAB|FMGE/NExT|NEET PG,Chinese University of Hong Kong Faculty of Medicine,Shatin,university
+Hong Kong,HK,AMC|PLAB|FMGE/NExT|NEET PG,"Li Ka Shing Faculty of Medicine, University of Hong Kong",Pokfulam,university
+India,IN,AMC|PLAB|FMGE/NExT|NEET PG,A.C.S. Medical College and Hospital,Chennai,university
+India,IN,AMC|PLAB|FMGE/NExT|NEET PG,A.C.S.R. Government Medical College,Nellore,university
+India,IN,AMC|PLAB|FMGE/NExT|NEET PG,A.J. Institute of Medical Sciences and Research Centre,Mangalore,university

@@ -1,0 +1,354 @@
+country,code,courses,college,city,type
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,Karaganda Medical University,Karaganda,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,Kazakh Medical University of Continuing Education Medical College,Almaty,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,Kazakh-Russian Medical University,Almaty,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,"Kokshetau University named after Sh. Ualikhanov, Higher School of Medicine",Kokshetau,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,Nazarbayev University School of Medicine,Astana,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,NJSC Astana Medical University,Astana,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,North Kazakhstan State University named after M. Kozybayev Faculty of Medicine,Petropavlovsk,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,Semey Medical University,Semey,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,South Kazakhstan Medical Academy,Shymkent,university
+Kazakhstan,KZ,AMC|PLAB|FMGE/NExT|NEET PG,West Kazakhstan Marat Ospanov Medical University,Aktobe,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Adam University School of Medicine,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Ala-Too International University,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Altamimi International University,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Asian International University named after Satkynbai Tentishev,Kant,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Avicenna International Medical University,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Bishkek International Medical Institute (BIMI),Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Central Asian International Medical University (CAIMU),Jalal-Abad,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Eurasian International University Faculty of Medicine,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,I.K. Akhunbaev Kyrgyz State Medical Academy,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,International European University Faculty of Medicine,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,International Higher School of Medicine,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,"International Medical Institute, International University of Science & Business",Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,International Medical University,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,"International School of Medicine, International University of Kyrgyzstan",Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,International University of Science and Medicine (IUSM),Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Jalal-Abad International University Medical Faculty,Jalal-Abad,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Jalal-Abad People's Friendship University A. Batirov Medical Faculty,Jalal-Abad,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Jalal-Abad State University Medical Faculty,Jalal-Abad,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kasym Tynystanov Issyk Kul State University,Karakol City,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kyrgyz International University NRZ,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kyrgyz Medical and Dental Institute,Kara-Balta,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kyrgyz National Agrarian University named after K.I. Scriabin,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kyrgyz National University named after Jusup Balasagyn,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kyrgyz State University named after I. Arabaev,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kyrgyz-Russian Slavic University (KRSU) named after B. N. Yelstin Medical Faculty,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Kyrgyz-Uzbek University Medical Faculty,Osh,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Naryn State University,Naryn,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Osh International Medical University,Osh,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Osh State University Medical Faculty,Osh,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Royal Metropolitan University,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,Salymbekov University Faculty of Medicine,Bishkek,university
+Kyrgyzstan,KG,AMC|PLAB|FMGE/NExT|NEET PG,University of South Asia,Tokmok,university
+Macau,MO,AMC|PLAB|FMGE/NExT|NEET PG,Macau University of Science and Technology Faculty of Medicine,Taipa,university
+Mauritius,MU,AMC|PLAB|FMGE/NExT|NEET PG,Anna Medical College,Montagne Blanche,university
+Mauritius,MU,AMC|PLAB|FMGE/NExT|NEET PG,"Padmashree Dr. D.Y. Patil Medical College, University of Technology Mauritius",Ebene Cybercity,university
+Mauritius,MU,AMC|PLAB|FMGE/NExT|NEET PG,SSR Medical College,Belle Rive,university
+Mauritius,MU,AMC|PLAB|FMGE/NExT|NEET PG,"University of Mauritius Faculty of Medicine and Health Sciences, Department of Medicine",Réduit,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,B.P. Koirala Institute of Health Sciences,Dharan,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Birat Medical College,Biratnagar,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Chitwan Medical College,Bharatpur,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,"College of Medical Sciences, Bharatpur",Bharatpur,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Devdaha Medical College,Devdaha,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Gandaki Medical College,Pokhara,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,"Institute of Medicine, Tribhuvan University",Kathmandu,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Janaki Medical College,Dhanusha,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Karnali Academy of Health Sciences (KAHS),Jumla,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Kathmandu Medical College,Kathmandu,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Kathmandu University School of Medical Sciences,Dhulikhel,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,KIST Medical College,Lalitpur,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Lumbini Medical College and Teaching Hospital,Tansen,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Manipal College of Medical Sciences (MCOMS),Pokhara,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,"National Medical College, Birgunj",Birgunj,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Nepal Medical College,Kathmandu,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Nepalese Army Institute of Health Sciences College of Medicine,Kathmandu,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Nepalgunj Medical College,Nepalgunj,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Nobel Medical College,Biratnagar,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Patan Academy of Health Sciences School of Medicine,Kathmandu,university
+Nepal,NP,AMC|PLAB|FMGE/NExT|NEET PG,Universal College of Medical Sciences,Bhairahawa,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Adventist University of the Philippines College of Medicine,Silang,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,AMA School of Medicine,Makati,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Angeles University Foundation School of Medicine,Angeles,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Ateneo de Zamboanga University College of Medicine,Zamboanga,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Ateneo School of Medicine and Public Health,Pasig City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Baguio Central University College of Medicine,Baguio,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Bicol Christian College of Medicine,Legazpi,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Bicol University College of Medicine,Legazpi,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Brokenshire College School of Medicine,Davao City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Cagayan State University College of Medicine and Surgery,Tuguegarao,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Cebu Doctors' University College of Medicine,Mandaue,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Cebu Institute of Medicine,Cebu,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Central Philippine University College of Medicine,Iloilo City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Centro Escolar University College of Medicine,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Chinese General Hospital Colleges,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Davao Medical School Foundation College of Medicine,Davao,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,De La Salle Medical and Health Sciences Institute College of Medicine,Dasmarinas,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Divine Word University School of Medicine (Liceo del Verbo Divino),Tacloban,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Dr. Francisco Q. Duque Medical Foundation College of Medicine,Dagupan,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Dr. Jose P. Rizal College of Medicine,Cagayan de Oro City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Emilio Aguinaldo College School of Medicine,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,"Far Eastern University Institute of Medicine, Nicanor Reyes Medical Foundation",Quezon City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,"Gullas College of Medicine, Inc., University of the Visayas",Mandaue,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Iloilo Doctors' College of Medicine,Iloilo City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Jose Maria College of Medicine Foundation,Davao City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,La Consolacion University Philippines College of Medicine,Malolos,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Liceo de Cagayan University College of Medicine,Cagayan de Oro City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Manila Central University-Filemon D. Tanchoco Foundation College of Medicine,Caloocan,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Manila Theological College of Medicine,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Mariano Marcos State University College of Medicine,Batac,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Matias H. Aznar Memorial College of Medicine,Cebu,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Metropolitan Medical Center College of Medicine,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Mindanao State University College of Medicine,Iligan,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,New Era University College of Medicine,Quezon City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Our Lady of Fatima University College of Medicine,Valenzuela,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Philippine Muslim-Christian College,Antipolo,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,PLT College Inc College of Medicine,Solano,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Remedios T. Romualdez Medical Foundation College of Medicine,Tacloban,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,San Beda University College of Medicine,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,"School of Health Sciences, University of the Philippines Manila",Palo,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Silliman University Medical School,Dumaguete,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Southwestern University School of Medicine,Cebu City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,St. Louis University School of Medicine,Baguio,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,St. Luke's Medical Center College of Medicine - William H. Quasha Memorial (SLMCCM-WHQM),Quezon City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,St. Paul University Philippines School of Medicine,Tuguegarao City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,The Manila Times College of Subic (TMTCS) College of Medicine,Olongapo City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Universidad de Santa Isabel College of Medicine,Naga City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of Cebu College of Medicine,Mandaue City,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of Northern Philippines College of Medicine,Ilocos Sur,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of Perpetual Help System Dalta Jonelta Foundation School of Medicine,Las Piñas,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of Perpetual Help System Dr. Jose G. Tamayo Medical University,Binan,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of Saint La Salle College of Medicine,Bacolod,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of Santo Tomas Faculty of Medicine and Surgery,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of the City of Manila College of Medicine,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of the East/Ramon Magsaysay Memorial Medical Center College of Medicine,Quezon,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,University of the Philippines Manila College of Medicine,Manila,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,Virgen Milagrosa University Foundation College of Medicine,San Carlos,university
+Philippines,PH,AMC|PLAB|FMGE/NExT|NEET PG,West Visayas State University College of Medicine,Iloilo City,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Almazov National Medical Research Centre,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Altai State Medical University,Barnaul,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Amur State Medical Academy,Blagoveshchensk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Astrakhan State Medical University,Astrakhan,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Bashkir State Medical University,Ufa,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Belgorod National Research University Medical Institute,Belgorod,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,BIOTECH University Medical Institute,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Buryat State University Institute of Medicine,Ulan-Ude,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Chita State Medical Academy,Chita,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Chuvash State University Medical Institute,Cheboksary,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Dagestan State Medical University,Makhachkala,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Far Eastern Federal University School of Medicine,Vladivostok,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Far Eastern State Medical University,Khabarovsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,I. M. Sechenov First Moscow State Medical University,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Immanuel Kant Baltic Federal University Institute of Medicine,Kaliningrad,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Ingush State University Faculty of Medicine,Nazran,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Institute of the Federal Security Service of the Russian Federation,Nizhny Novgorod,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Irkutsk State Medical University,Irkutsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Ivanovo State Medical University,Ivanovo,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Izhevsk State Medical Academy (ISMA),Izhevsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kabardino-Balkarian State University Faculty of Medicine,Nalchik,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kadyrov Chechen State University,Groznij,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kaluga State University named after K. E. Tsiolkovsky Medical Institute,Kaluga,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kazan Federal University Institute of Fundamental Medicine and Biology,Kazan,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kazan State Medical University,Kazan,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kemerovo State Medical University,Kemerovo,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kemerovo State University Medical Institute,Kemerovo,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,"Khakasia State University named after N. F. Katanov Institute of Medicine, Psychology and Sociology",Abakan,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Khanty-Mansiysk State Medical Academy,Khanty-Mansiysk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kirov State Medical University,Kirov,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,"Kirov State Medical University, Komi Branch",Syktyvkar,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Krasnoyarsk State Medical University named after Professor V. F. Voino-Yasenetsky,Krasnoyarsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kuban Medical Institute,Krasnodar,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kuban State Medical University,Krasnodar,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Kursk State Medical University,Kursk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Lobachevsky State University of Nizhny Novgorod Institute of Biology and Biomedicine,Nizhny Novgorod,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Lomonosov Moscow State University Faculty of Medicine,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Mari State University Medical Faculty,Yoshkar-Ola,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Maykop State Technological University Medical Institute,Maykop,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Medical Institute of Tambov State University named after G. R. Derzhavin,Tambov,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Medical University Reaviz Moscow,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Medical University Reaviz Samara,Samara,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Medical University Reaviz Saratov,Saratov,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Medical University Reaviz St. Petersburg,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Military Medical Academy S. M. Kirov,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Moscow Institute of Medico-Social Rehabilitation,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Moscow Medical Institute of Health Ministry,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Moscow Region State University Faculty of Medicine,Mytishi,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Murmansk Arctic State University,Murmansk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,National Nuclear Research University 'MEPhI' Engineering Physics Institute of Biomedicine,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,National Research Ogarev Mordovia State University Medical Faculty,Saransk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Naval Academy of Medicine,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,North Caucasian State Academy,Cherkessk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,North Ossetian State Medical Academy,Vladikavkaz,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,North-Eastern Federal University named after Maxim Kirovich Ammosov Institute of Medicine,Yakutsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,North-Western State Medical University I. I. Mechnikov,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Northern State Medical University,Arkhangelsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Novosibirsk State Medical University,Novosibirsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Novosibirsk State University Institute of Medicine and Psychology V. Zelman,Novosibirsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,"Obninsk Institute of Atomic Energy, National Nuclear Research University 'MEPI' Medical Faculty",Obninsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Omsk State Medical University,Omsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Orel State University named after I.S. Turgenev,Oryol,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Orenburg State Medical University,Orenburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Pacific State Medical University,Vladivostok,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Penza State University Medical Institute,Penza,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,People's Friendship University of Russia Faculty of Medicine,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Perm State Medical University named after Academician E. A. Wagner,Perm,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Petrozavodsk State University Institute of Medicine (PetrSU),Petrozavodsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Pitirim Sorokin Syktyvkar State University Medical Institute,Syktyvkar,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Privolzhsky Research Medical University,Nizhny Novgorod,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Pskov State University Institute of Medicine and Experimental Biology,Pskov,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Rostov State Medical University,Rostov,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Russian National Research Medical University named after N. I. Pirogov,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Russian University of Medicine,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Ryazan State Ivan Petrovich Pavlov Medical University Medical Faculty,Ryazan,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Saint Petersburg Medical and Technical Institute,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Saint Petersburg Medico-Social Institute,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Saint Petersburg Pavlov State Medical University,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Saint Petersburg State University Faculty of Medicine,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Saint-Petersburg State Pediatric-Medical University,St. Petersburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Samara Military Medical Institute,Samara,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Samara State Medical University,Samara,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Saratov Military Medical Institute,Saratov,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Saratov State Medical University named after V. I. Razumovsky,Saratov,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Siberian State Medical University,Tomsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Smolensk State Medical University,Smolensk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,South-Ural State Medical University,Chelyabinsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,State Classical Academy named for Maimonid Medical Faculty,Moscow,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Stavropol State Medical University,Stavropol,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Surgut State University Institute of Medicine,Surgut,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Tomsk Military Medical Institute,Tomsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Tula State University Medical Institute,Tula,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Tver State Medical University,Tver,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Tyumen State Medical University,Tyumen,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Ulyanovsk State University Medical Faculty named after T. Z. Biktimirov,Ulyanovsk,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Ural State Medical University,Yekaterinburg,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Volgograd State Medical University,Volgograd,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Voronezh State Medical University Named after N. N. Burdenko,Voronezh,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Yaroslav-the-Wise Novgorod State University Institute of Medical Education,Veliky Novgorod,university
+Russian Federation,RU,AMC|PLAB|FMGE/NExT|NEET PG,Yaroslavl State Medical University,Yaroslavl,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,American International Medical University School of Medicine,Gros Islet,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,Atlantic University School of Medicine,Rodney Bay,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,"College of Medicine and Health Sciences, St. Lucia",Rodney Bay,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,Commonwealth University College of Medicine,Gros Islet,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,International American University College of Medicine,Vieux Fort,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,Spartan Health Sciences University School of Medicine,Vieux Fort,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,St. Helen University School of Medicine,Vieux Fort,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,St. Mary's School of Medicine (St. Lucia),Castries,university
+Saint Lucia,LC,AMC|PLAB|FMGE/NExT|NEET PG,Washington Medical Sciences Institute,Gros Islet,university
+Tajikistan,TJ,AMC|PLAB|FMGE/NExT|NEET PG,Avicenna Tajik State Medical University,Dushanbe,university
+Tajikistan,TJ,AMC|PLAB|FMGE/NExT|NEET PG,"Avicenna Tajik State Medical University, Khujand Branch",Khujand,university
+Tajikistan,TJ,AMC|PLAB|FMGE/NExT|NEET PG,Khatlon State Medical University,Dangara,university
+Tajikistan,TJ,AMC|PLAB|FMGE/NExT|NEET PG,Medical Social Institute of Tajikistan,Dushanbe,university
+Tajikistan,TJ,AMC|PLAB|FMGE/NExT|NEET PG,Tajik National University Faculty of Medicine,Dushanbe,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Bogomolets National Medical University,Kyiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Bohdan Khmelnytsky National University of Cherkasy Institute of Medicine,Cherkasy,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Bukovinian State Medical University,Chernivtsi,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Danylo Halytsky Lviv National Medical University,Lviv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Dnipro Institute of Medicine and Public Health,Dnipro,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Dnipro State Medical University,Dnipro,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Donetsk National Medical University Faculty of General Medicine,Lyman,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,European Medical University,Dnipro,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,I. Ya. Horbachevsky Ternopil National Medical University,Ternopil,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,International Academy of Ecology and Medicine,Kyiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,International European University European Medical School,Kyiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,International Humanitarian University Odessa Medical Institute,Odessa,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Ivano-Frankivsk National Medical University,Ivano-Frankivsk,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Kharkiv International Medical University,Kharkiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Kharkiv National Medical University,Kharkiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Kyiv International University Medical Institute,Kyiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Kyiv Medical University,Kyiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Lesya Ukrainka Volyn National University Medical Institute,Lutsk,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Lugansk State Medical University,Rivne,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Lviv Medical Institute,Lviv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Medical Academy named after S.I. Georgievsky of Vernadsky CFU,Simferopol,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,"National Pirogov Memorial Medical University, Vinnitsa",Vinnytsya,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Odessa National Medical University,Odessa,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Oles Honchar Dnipro National University,Dnipro,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Petro Mohyla Black Sea National University Faculty of Medicine,Mykolayiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Poltava State Medical University,Poltava,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Sevastopol State University Institute of Fundamental Medicine and Healthcare,Sevastopl,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,South Ukrainian National Pedagogical University named after K.D. Ushynsky Faculty of Medicine,Odessa,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Stalino Medical Institute,Stalino,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Stanislav Medical Institute,Stanislav,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Sumy State University Medical Institute,Sumy,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Taras Shevchenko National University of Kyiv Institute of Biology and Medicine,Kyiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Ukrainian Military Medical Academy,Kyiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,University of Medicine and Social Sciences,Kharkiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Uzhhorod National University Faculty of Medicine,Uzhhorod,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,V.N. Karazin Kharkiv National University School of Medicine,Kharkiv,university
+Ukraine,UA,AMC|PLAB|FMGE/NExT|NEET PG,Zaporizhzhia State Medical and Pharmaceutical University,Zaporizhzhia,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,Ajman University College of Medicine,Ajman,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,Dubai Medical University,Dubai,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,"Gulf Medical University, Ajman",Ajman,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,Khalifa University College of Medicine and Health Sciences,Abu Dhabi,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,Mohammed Bin Rashid University of Medicine and Health Sciences,Dubai,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,RAK College of Medical Sciences,Ras Al Khaimah,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,United Arab Emirates University College of Medicine and Health Sciences,Al Ain,university
+United Arab Emirates,AE,AMC|PLAB|FMGE/NExT|NEET PG,University of Sharjah College of Medicine,Sharjah,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Alfraganus University Faculty of Medicine,Тoshkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Andizhan State Medical Institute,Andizhan,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Angren University Faculty of Medicine,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Asia International University Faculty of Medicine,Bukhara,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Bukhara Innovative Education and Medical University,Bukhara,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Bukhara State Medical Institute named after Abu Ali Ibn Sino,Bukhara,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Central Asian Medical University,Ferghana,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Central Asian University Medical School,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Chirchik Branch of Tashkent State Medical University,Chirchik City,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,EMU University Faculty of Medicine,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Fergana Medical Institute of Public Health,Fergana,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Fergana State University Medical Centre,Fergana,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,First Tashkent State Medical Institute,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Gulistan State University Faculty of Medicine,Gulistan City,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Impuls Medical Institute,Namangan,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,"Impuls Medical Institute, Chirchiq Branch",Chirchiq City,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Institute of Pharmaceutical Education and Research,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Karshi State University Faculty of Medicine,Karshi,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Kimyo International University School of Medicine,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Kokand University Andijan Branch Faculty of Medicine,Andijan,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Ma'mun University Faculty of Medicine,Khiva,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Medical Institute of Karakalpakstan,Nukus,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Namangan State University Faculty of Medicine,Namangan,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Navoi State University Faculty of Natural Sciences and Medicine,Navoi,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Profi University Faculty of Medicine,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Samarkand State Medical University,Samarkand,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Second Tashkent State Medical Institute,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Tashkent Pediatric Medical Institute,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Tashkent Pharmaceutical Institute Faculty of General Medicine,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Tashkent State Dental Institute Faculty of Medicine,Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,"Tashkent State Medical University, Tashkent",Tashkent,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Termez Branch of Tashkent State Medical University,Termez,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Termez University of Economics and Services,Termez,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Turon University Faculty of Medicine,Karshi,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,University of Business and Science,Namangan,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Urgench Ranch University of Technology Faculty of Medical Sciences,Urgench,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Urgench State Medical Institute,Urgench,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Zarmed University Faculty of Medicine,Bukhara,university
+Uzbekistan,UZ,AMC|PLAB|FMGE/NExT|NEET PG,Zarmed University Faculty of Medicine Samarkand,Samarkand,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Buon Ma Thuot Medical University,Buon Ma Thuot,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Can Tho University of Medicine and Pharmacy Faculty of Medicine,Can Tho,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Da Nang University of Medical Technology and Pharmacy,Da Nang,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Dai Nam University Faculty of Medicine,Hanoi,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Dong A University College of Medicine,Da Nang City,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Duy Tan University Faculty of Medicine,Da Nang,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Hai Phong University of Medicine and Pharmacy,Hai Phong,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Hanoi Medical University,Hanoi,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Hong Bang International University Faculty of Medicine,Ho Chi Minh,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Hue University of Medicine and Pharmacy,Hue,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Nam Can Tho University Faculty of Medicine,Can Tho City,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Nguyen Tat Thanh University Faculty of Medicine,Ho Chi Minh,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Pham Ngoc Thach University of Medicine Faculty of Medicine,Ho Chi Minh,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Phan Chau Trinh University,Da Nang City,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Phenikaa University Faculty of Medicine,Hanoi,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Tan Tao University School of Medicine,Duc Hoa Ha,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Tay Nguyen University Faculty of Medicine and Pharmacy,Buon Ma Thuot,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Thai Binh University of Medicine and Pharmacy,Thai Binh,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Thai Nguyen University of Medicine and Pharmacy Faculty of Medicine,Thai Nguyen,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Tra Vinh University School of Medicine and Pharmacy,Tra Vinh,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,University of Danang Faculty of Medicine and Pharmacy,Da Nang,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,University of Medicine and Pharmacy of Ho Chi Minh City,Ho Chi Minh,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,"University of Medicine and Pharmacy, Vietnam National University, Hanoi",Hanoi,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Vietnam Military Medical University Faculty of Medicine,Hanoi,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Vietnam National University of Ho Chi Minh City School of Medicine,Di An City,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Vietnam University of Traditional Medicine,Hanoi,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Vinh Medical University Faculty of Medicine,Vinh,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,VinUniversity College of Health Sciences,Hanoi,university
+Viet Nam,VN,AMC|PLAB|FMGE/NExT|NEET PG,Vo Truong Toan University Faculty of Medicine,Tan Phu Thanh,university
