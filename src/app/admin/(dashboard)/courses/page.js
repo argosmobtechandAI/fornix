@@ -12,6 +12,10 @@ import {
   BookOpen,
   Upload,
   FileText,
+  Copy,
+  CheckCircle2,
+  XCircle,
+  ArrowRight,
 } from "lucide-react";
 import toast, { Toaster } from "react-hot-toast";
 import Modal from "@/components/Modal";
@@ -34,6 +38,7 @@ export default function page() {
   });
   const [brochureUploading, setBrochureUploading] = useState({});
   const brochureInputRefs = useRef({});
+
 
   async function fetchCourses() {
     try {
@@ -157,6 +162,12 @@ export default function page() {
   const navigateToBulkUpload = (courseId) => {
     router.push(`/admin/bulk-upload?course_id=${courseId}`);
   };
+
+  // Clone course
+  const openCloneModal = (course) => {
+    router.push('/admin/clone-course');
+  };
+
 
   async function uploadBrochure(courseId, file) {
     if (!file) return;
@@ -336,6 +347,13 @@ export default function page() {
                         </div>
                         <div className="flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                           <button
+                            onClick={() => openCloneModal(course)}
+                            className="p-2 text-green-600 hover:bg-green-50 dark:hover:bg-green-900/20 rounded-lg transition-colors duration-200"
+                            title="Clone course"
+                          >
+                            <Copy size={16} />
+                          </button>
+                          <button
                             onClick={() => openEdit(course)}
                             className="p-2 text-yellow-600 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 rounded-lg transition-colors duration-200"
                             title="Edit course"
@@ -504,6 +522,13 @@ export default function page() {
                       </div>
 
                       <div className="flex gap-2">
+                        <button
+                          onClick={() => openCloneModal(course)}
+                          className="p-2 text-green-600 hover:bg-green-50 dark:hover:bg-green-900/20 rounded-lg transition-colors duration-200"
+                          title="Clone course"
+                        >
+                          <Copy size={18} />
+                        </button>
                         <button
                           onClick={() => openEdit(course)}
                           className="p-2 text-yellow-600 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 rounded-lg transition-colors duration-200"

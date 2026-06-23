@@ -21,9 +21,10 @@ import {
   Zap,
   MessageCircle,
   Tag,
-  Inbox,
   MessageSquare,
   Globe,
+  ClipboardList,
+  Copy,
 } from "lucide-react";
 import { jwtDecode } from "jwt-decode";
 
@@ -128,6 +129,7 @@ export default function Sidebar({
       { name: "Universities", icon: BookOpen, href: "/admin/universities" },
       { name: "Doctors", icon: Users, href: "/admin/doctors" },
       { name: "Courses", icon: BarChart3, href: "/admin/courses" },
+      { name: "Clone Course", icon: Copy, href: "/admin/clone-course" },
       { name: "Course Videos", icon: Upload, href: "/admin/course-videos" },
       { name: "Course Features", icon: Settings, href: "/admin/course-features" },
       { name: "Subjects", icon: BarChart3, href: "/admin/questions" },
@@ -153,6 +155,7 @@ export default function Sidebar({
       { name: "Devices", icon: Settings, href: "/admin/devices" },
       { name: "Manage PY Topics", icon: BookOpen, href: "/admin/py-topics" },
       { name: "Countries & Colleges", icon: BookOpen, href: "/admin/countries" },
+      { name: "Activity Logs", icon: ClipboardList, href: "/admin/activity-logs" },
       { name: "My Profile", icon: User, href: "/admin/profile" },
     ]
     : role === "university"
