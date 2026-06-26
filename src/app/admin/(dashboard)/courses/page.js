@@ -370,6 +370,11 @@ export default function page() {
                         </div>
                       </div>
 
+                      {course.course_categories && (
+                        <span className="inline-block bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs px-2 py-1 rounded-full mb-2 font-medium">
+                          {course.course_categories.name}
+                        </span>
+                      )}
                       <h3 className="font-semibold text-gray-900 dark:text-white text-lg mb-2 line-clamp-2">
                         {course.name}
                       </h3>
@@ -467,9 +472,16 @@ export default function page() {
                         )}
                       </div>
                       <div>
-                        <h3 className="font-semibold text-gray-900 dark:text-white text-lg mb-1">
-                          {course.name}
-                        </h3>
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-gray-900 dark:text-white text-lg">
+                            {course.name}
+                          </h3>
+                          {course.course_categories && (
+                            <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                              {course.course_categories.name}
+                            </span>
+                          )}
+                        </div>
                         <p className="text-gray-600 dark:text-gray-400 text-sm max-w-2xl">
                           {course.description || "No description provided"}
                         </p>

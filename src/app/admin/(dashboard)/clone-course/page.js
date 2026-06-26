@@ -225,7 +225,6 @@ export default function CloneCoursePage() {
     <div className="min-h-screen  dark:from-gray-900 dark:to-gray-800 ">
       <Toaster position="top-right" />
       <div className="mx-auto max-w-full">
-
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-8">
           <div className="flex items-center gap-4">

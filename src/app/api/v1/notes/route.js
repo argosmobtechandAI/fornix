@@ -1,11 +1,11 @@
 import { supabase } from "@/lib/supabaseAdmin";
 import { NextResponse } from "next/server";
 
-// Mobile API: Get notes by course_id and subject_id
-// POST body: { course_id: "UUID", subject_id?: "UUID", note_type?: "sample" | "premium" }
+// Public API: Get notes by course_id, optionally filtered by subject_id, chapter_id, note_type
+// POST body: { course_id, subject_id?, chapter_id?, note_type?: "sample" | "full" | "premium" }
 export async function POST(req) {
   try {
-    const { course_id, subject_id, note_type } = await req.json();
+    const { course_id, subject_id, chapter_id, note_type } = await req.json();
 
     if (!course_id) {
       return NextResponse.json(
@@ -16,19 +16,29 @@ export async function POST(req) {
 
     let query = supabase
       .from("course_notes")
-      .select("id, course_id, subject_id, title, pdf_url, note_type, created_at, updated_at, subjects(id, name)")
+      .select(
+        "id, course_id, subject_id, chapter_id, title, content, pdf_url, note_type, created_at, updated_at, subjects(id, name)"
+      )
       .eq("course_id", course_id)
-      .order("created_at", { ascending: false });
+      .order("created_at", { ascending: true });
 
-    // Filter by subject_id if provided
-    if (subject_id) {
+    // Filter by chapter_id if provided (most specific)
+    if (chapter_id) {
+      query = query.eq("chapter_id", chapter_id);
+    } else if (subject_id) {
+      // Fall back to subject-level filter if no chapter given
       query = query.eq("subject_id", subject_id);
     }
 
-    // Filter by note_type if provided (sample/premium)
-    if (note_type && ["sample", "premium"].includes(note_type)) {
-      query = query.eq("note_type", note_type);
+    // note_type: "full" means return all (both sample + premium), otherwise filter by exact type
+    if (note_type && note_type !== "full") {
+      const dbType = note_type === "premium" ? "premium" : "sample";
+      if (["sample", "premium"].includes(dbType)) {
+        // For "full" access, return both sample AND premium. For others, filter.
+        query = query.eq("note_type", dbType);
+      }
     }
+    // If note_type === "full", we do NOT filter — return all note types (both sample & premium)
 
     const { data, error } = await query;
 
@@ -48,6 +58,3 @@ export async function POST(req) {
     );
   }
 }
-
-
-

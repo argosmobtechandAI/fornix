@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import { useRouter, useParams } from "next/navigation";
 import toast from "react-hot-toast";
 import Modal from "@/components/Modal";
+import RichTextEditor from "@/components/RichTextEditor";
 import { FileText, Plus, Trash2, Pencil, Download, Search, ArrowLeft, Upload } from "lucide-react";
 
 export default function SubjectNotesPage() {
@@ -14,10 +15,12 @@ export default function SubjectNotesPage() {
   
   const [course, setCourse] = useState(null);
   const [subject, setSubject] = useState(null);
+  const [chapters, setChapters] = useState([]);
   const [notes, setNotes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [noteTypeFilter, setNoteTypeFilter] = useState("all");
+  const [chapterFilter, setChapterFilter] = useState("all");
   const [selectedNotes, setSelectedNotes] = useState([]);
   const [page, setPage] = useState(1);
   const [modal, setModal] = useState({
@@ -39,25 +42,25 @@ export default function SubjectNotesPage() {
     try {
       setLoading(true);
       
-      // Load course and subject details
-      const [courseRes, subjectRes, notesRes] = await Promise.all([
+      // Load course, subject, chapters, and notes
+      const [courseRes, subjectRes, chaptersRes, notesRes] = await Promise.all([
         fetch(`/api/admin/courses/${courseId}`),
         fetch(`/api/admin/subjects/${subjectId}`),
-        fetch(`/api/admin/notes?course_id=${courseId}`)
+        fetch(`/api/admin/chapters?subject_id=${subjectId}&limit=500`),
+        fetch(`/api/admin/notes?course_id=${courseId}&subject_id=${subjectId}`)
       ]);
       
       const courseJson = await courseRes.json();
       const subjectJson = await subjectRes.json();
+      const chaptersJson = await chaptersRes.json();
       const notesJson = await notesRes.json();
       
       if (courseJson.success) setCourse(courseJson.data);
       if (subjectJson.success) setSubject(subjectJson.data);
+      if (chaptersJson.success) setChapters(chaptersJson.data || []);
       
       if (notesJson.success) {
-        const subjectNotes = (notesJson.notes || []).filter(
-          n => String(n.subject_id) === String(subjectId)
-        );
-        setNotes(subjectNotes);
+        setNotes(notesJson.notes || []);
       }
     } catch (e) {
       toast.error(e.message);
@@ -73,6 +76,15 @@ export default function SubjectNotesPage() {
     if (noteTypeFilter !== "all") {
       result = result.filter(n => n.note_type === noteTypeFilter);
     }
+
+    // Filter by chapter
+    if (chapterFilter !== "all") {
+      if (chapterFilter === "none") {
+        result = result.filter(n => !n.chapter_id);
+      } else {
+        result = result.filter(n => String(n.chapter_id) === String(chapterFilter));
+      }
+    }
     
     // Filter by search
     const s = search.trim().toLowerCase();
@@ -81,7 +93,7 @@ export default function SubjectNotesPage() {
     }
     
     return result;
-  }, [notes, search, noteTypeFilter]);
+  }, [notes, search, noteTypeFilter, chapterFilter]);
 
   const paginated = useMemo(() => {
     const start = (page - 1) * limit;
@@ -103,7 +115,7 @@ export default function SubjectNotesPage() {
     setModal({ open: false, mode: "create", item: null, saving: false });
   }
 
-  async function saveNote({ title, note_type, pdfFile }) {
+  async function saveNote({ title, note_type, content, pdfFile, chapter_id }) {
     try {
       setModal((m) => ({ ...m, saving: true }));
       const fd = new FormData();
@@ -111,6 +123,8 @@ export default function SubjectNotesPage() {
       fd.set("subject_id", subjectId);
       fd.set("title", title);
       fd.set("note_type", note_type);
+      if (chapter_id) fd.set("chapter_id", chapter_id);
+      if (content) fd.set("content", content);
       if (pdfFile) fd.set("pdf", pdfFile);
 
       const isEdit = modal.mode === "edit" && modal.item?.id;
@@ -212,7 +226,7 @@ export default function SubjectNotesPage() {
         {/* Filters */}
         <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 mb-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <div className="md:col-span-2">
+            <div className="md:col-span-1">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                 <input
@@ -232,6 +246,19 @@ export default function SubjectNotesPage() {
                 <option value="all">All Types</option>
                 <option value="sample">Sample (Free)</option>
                 <option value="premium">Premium (Paid)</option>
+              </select>
+            </div>
+            <div>
+              <select
+                value={chapterFilter}
+                onChange={(e) => { setChapterFilter(e.target.value); setPage(1); }}
+                className="w-full p-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+              >
+                <option value="all">All Chapters</option>
+                <option value="none">No Chapter (Subject-level)</option>
+                {chapters.map(c => (
+                  <option key={c.id} value={c.id}>{c.name}</option>
+                ))}
               </select>
             </div>
           </div>
@@ -307,16 +334,18 @@ export default function SubjectNotesPage() {
                         </div>
                       </div>
                       <div className="flex items-center gap-2">
-                        <a
-                          href={n.pdf_url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-                          title="Open PDF"
-                        >
-                          <Download size={16} />
-                          PDF
-                        </a>
+                        {n.pdf_url && (
+                          <a
+                            href={n.pdf_url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                            title="Open PDF"
+                          >
+                            <Download size={16} />
+                            PDF
+                          </a>
+                        )}
                         <button
                           onClick={() => openEdit(n)}
                           className="p-2 rounded-lg hover:bg-yellow-50 dark:hover:bg-yellow-900/20 text-yellow-600 dark:text-yellow-400"
@@ -372,13 +401,14 @@ export default function SubjectNotesPage() {
           open={modal.open}
           onClose={closeModal}
           title={modal.mode === "edit" ? "Edit Note" : "Add Note"}
-          size="lg"
+          size="2xl"
         >
           <NoteForm
             initial={modal.mode === "edit" ? modal.item : null}
             saving={modal.saving}
             onCancel={closeModal}
             onSubmit={saveNote}
+            chapters={chapters}
           />
         </Modal>
       </div>
@@ -386,55 +416,92 @@ export default function SubjectNotesPage() {
   );
 }
 
-function NoteForm({ initial, saving, onCancel, onSubmit }) {
+function NoteForm({ initial, saving, onCancel, onSubmit, chapters = [] }) {
   const [title, setTitle] = useState(initial?.title || "");
   const [note_type, setNoteType] = useState(initial?.note_type || "sample");
+  const [chapter_id, setChapterId] = useState(initial?.chapter_id || "");
+  const [content, setContent] = useState(initial?.content || "");
   const [pdfFile, setPdfFile] = useState(null);
 
   useEffect(() => {
     setTitle(initial?.title || "");
     setNoteType(initial?.note_type || "sample");
+    setChapterId(initial?.chapter_id || "");
+    setContent(initial?.content || "");
     setPdfFile(null);
   }, [initial]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title.trim()) return toast.error("Title is required");
-    if (!initial && !pdfFile) return toast.error("PDF is required");
-    onSubmit({ title: title.trim(), note_type, pdfFile });
+    if (!initial && !content && !pdfFile) return toast.error("Either Note Content or PDF is required");
+    onSubmit({ title: title.trim(), note_type, content, pdfFile, chapter_id: chapter_id || null });
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          Title
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Title <span className="text-red-500">*</span>
+          </div>
+          <input
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            className="w-full p-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+            placeholder="e.g., Chapter 1 - Introduction"
+          />
         </div>
-        <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          className="w-full p-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-          placeholder="e.g., AMC Notes - Chapter 1"
-        />
+        <div>
+          <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Note Type <span className="text-red-500">*</span>
+          </div>
+          <select
+            value={note_type}
+            onChange={(e) => setNoteType(e.target.value)}
+            className="w-full p-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+          >
+            <option value="sample">Sample (Free)</option>
+            <option value="premium">Premium (Paid)</option>
+          </select>
+        </div>
       </div>
+
+      {chapters.length > 0 && (
+        <div>
+          <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Assign to Chapter <span className="text-xs text-gray-400 font-normal ml-1">(optional — leave blank for subject-level)</span>
+          </div>
+          <select
+            value={chapter_id}
+            onChange={(e) => setChapterId(e.target.value)}
+            className="w-full p-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+          >
+            <option value="">— Subject Level (no chapter) —</option>
+            {chapters.map(c => (
+              <option key={c.id} value={c.id}>{c.name}</option>
+            ))}
+          </select>
+        </div>
+      )}
 
       <div>
         <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          Note Type
+          Note Content (Rich Text)
         </div>
-        <select
-          value={note_type}
-          onChange={(e) => setNoteType(e.target.value)}
-          className="w-full p-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-        >
-          <option value="sample">Sample (Free)</option>
-          <option value="premium">Premium (Paid)</option>
-        </select>
+        <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
+          <RichTextEditor
+            value={content}
+            onChange={setContent}
+            label=""
+          />
+        </div>
       </div>
 
       <div>
-        <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          PDF
+        <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center justify-between">
+          <span>PDF File (Optional)</span>
+          <span className="text-xs text-gray-500 font-normal italic">Overrides rich text if both provided</span>
         </div>
         <input
           type="file"

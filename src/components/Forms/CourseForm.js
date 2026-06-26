@@ -9,12 +9,28 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
   const [tutorialVideoUrl, setTutorialVideoUrl] = useState(initial?.tutorial_video_url || "");
   const [iconFile, setIconFile] = useState(null);
   const [iconPreview, setIconPreview] = useState(initial?.icon_url || "");
+  const [categoryId, setCategoryId] = useState(initial?.category_id || "");
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    async function fetchCategories() {
+      try {
+        const res = await fetch("/api/admin/course-categories");
+        const json = await res.json();
+        if (json.success) setCategories(json.data);
+      } catch (err) {
+        console.error("Failed to load categories:", err);
+      }
+    }
+    fetchCategories();
+  }, []);
 
   useEffect(() => {
     if (initial) {
       setName(initial.name);
       setDescription(initial.description || "");
       setTutorialVideoUrl(initial.tutorial_video_url || "");
+      setCategoryId(initial.category_id || "");
       setIconPreview(initial.icon_url || "");
       setIconFile(null);
     }
@@ -30,7 +46,7 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    onSubmit({ name, description, tutorial_video_url: tutorialVideoUrl, iconFile });
+    onSubmit({ name, description, tutorial_video_url: tutorialVideoUrl, category_id: categoryId, iconFile });
   }
 
   return (
@@ -69,6 +85,28 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
                 onChange={(e) => setName(e.target.value)}
                 disabled={saving}
               />
+            </div>
+          </div>
+
+          {/* Category Dropdown */}
+          <div className="space-y-2">
+            <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+              Course Category
+            </label>
+            <div className="relative">
+              <select
+                value={categoryId}
+                onChange={(e) => setCategoryId(e.target.value)}
+                disabled={saving}
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 shadow-sm appearance-none"
+              >
+                <option value="">-- No Category (Uncategorized) --</option>
+                {categories.map((cat) => (
+                  <option key={cat.id} value={cat.id}>
+                    {cat.name}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 

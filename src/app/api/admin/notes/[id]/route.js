@@ -18,12 +18,14 @@ export async function PUT(req, { params }) {
     const title = formData.get("title");
     const course_id = formData.get("course_id");
     const subject_id = formData.get("subject_id");
+    const chapter_id = formData.get("chapter_id"); // may be null/empty to unset
     const note_type = formData.get("note_type");
+    const content = formData.get("content");
     const pdf = formData.get("pdf");
 
     const { data: existing, error: eErr } = await supabase
       .from("course_notes")
-      .select("id, pdf_url, course_id, subject_id")
+      .select("id, pdf_url, course_id, subject_id, chapter_id")
       .eq("id", id)
       .single();
     if (eErr) throw eErr;
@@ -39,11 +41,18 @@ export async function PUT(req, { params }) {
     }
     if (course_id !== null && course_id !== undefined) updates.course_id = course_id;
     if (subject_id !== null && subject_id !== undefined) updates.subject_id = subject_id;
+    // chapter_id: empty string means "clear it", valid UUID sets it
+    if (chapter_id !== null && chapter_id !== undefined) {
+      updates.chapter_id = chapter_id === "" ? null : chapter_id;
+    }
     if (note_type !== null && note_type !== undefined) {
       if (!["sample", "premium"].includes(note_type)) {
         return Response.json({ success: false, error: "note_type must be 'sample' or 'premium'" }, { status: 400 });
       }
       updates.note_type = note_type;
+    }
+    if (content !== null && content !== undefined) {
+      updates.content = String(content);
     }
 
     // Replace PDF if provided
@@ -76,7 +85,7 @@ export async function PUT(req, { params }) {
       .from("course_notes")
       .update(updates)
       .eq("id", id)
-      .select("id, course_id, subject_id, title, pdf_url, note_type, created_at, updated_at")
+      .select("id, course_id, subject_id, title, content, pdf_url, note_type, created_at, updated_at")
       .single();
     if (error) throw error;
 

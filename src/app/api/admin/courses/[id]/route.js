@@ -14,7 +14,7 @@ export async function GET(req, { params }) {
 
     const { data, error } = await supabase
       .from("courses")
-      .select("*")
+      .select("*, course_categories(id, name)")
       .eq("id", id)
       .single();
 
@@ -49,6 +49,7 @@ export async function PUT(req, { params }) {
     name: body.name,
     description: body.description,
     tutorial_video_url: body.tutorial_video_url || null,
+    category_id: body.category_id || null,
     updated_at: new Date(),
   };
   if (slug) updateData.slug = slug;

@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   const { data, error } = await supabase
     .from("courses")
-    .select("*")
+    .select("*, course_categories(id, name)")
     .order("created_at", { ascending: false });
 
   if (error) return NextResponse.json({ success: false, error: error.message });
@@ -24,6 +24,7 @@ export async function POST(req) {
         slug: slug,
         description: body.description,
         tutorial_video_url: body.tutorial_video_url || null,
+        category_id: body.category_id || null,
       },
     ])
     .select()

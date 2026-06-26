@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { 
   FiBold, FiItalic, FiUnderline, 
-  FiList, FiRotateCcw, FiImage,
+  FiList, FiRotateCcw, FiImage, FiLink,
   FiAlignLeft, FiAlignCenter, FiAlignRight, FiAlignJustify, FiTrash2
 } from 'react-icons/fi';
 import toast from 'react-hot-toast';
@@ -68,6 +68,13 @@ const RichTextEditor = ({ value, onChange, label }) => {
     updateActiveFormat();
     if (editorRef.current) {
       editorRef.current.focus();
+    }
+  };
+
+  const insertLink = () => {
+    const url = window.prompt("Enter the link URL:", "https://");
+    if (url) {
+      execCommand("createLink", url);
     }
   };
 
@@ -371,6 +378,31 @@ const RichTextEditor = ({ value, onChange, label }) => {
 
           <div className="w-px h-5 bg-gray-300 dark:bg-gray-700 mx-0.5" />
 
+          {/* Font Size Select */}
+          <select 
+            onChange={(e) => execCommand('fontSize', e.target.value)}
+            className="text-xs bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg px-1.5 py-1.5 text-gray-700 dark:text-gray-300 outline-none cursor-pointer hover:border-gray-300 dark:hover:border-gray-600 transition-colors font-bold shadow-xs mr-1"
+          >
+            <option value="">Size</option>
+            <option value="1">Small</option>
+            <option value="3">Normal</option>
+            <option value="5">Large</option>
+            <option value="7">Huge</option>
+          </select>
+
+          {/* Text Color Picker */}
+          <div className="relative flex items-center justify-center p-1 border border-gray-200 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 shadow-xs mr-1 hover:border-gray-300">
+            <input 
+              type="color" 
+              onChange={(e) => execCommand('foreColor', e.target.value)}
+              className="w-5 h-5 cursor-pointer opacity-0 absolute inset-0 z-10" 
+              title="Text Color"
+            />
+            <div className="w-4 h-4 rounded-full bg-gradient-to-br from-red-500 via-green-500 to-blue-500" title="Text Color"></div>
+          </div>
+
+          <div className="w-px h-5 bg-gray-300 dark:bg-gray-700 mx-0.5" />
+
           {/* Text decoration buttons */}
           <ToolbarButton onClick={() => execCommand('bold')} icon={<FiBold size={14} />} title="Bold" />
           <ToolbarButton onClick={() => execCommand('italic')} icon={<FiItalic size={14} />} title="Italic" />
@@ -389,6 +421,11 @@ const RichTextEditor = ({ value, onChange, label }) => {
           {/* List buttons */}
           <ToolbarButton onClick={() => execCommand('insertUnorderedList')} icon={<FiList size={14} />} title="Bullet List" />
           <ToolbarButton onClick={() => execCommand('insertOrderedList')} icon={<OrderedListIcon />} title="Numbered List" />
+          
+          <div className="w-px h-5 bg-gray-300 dark:bg-gray-700 mx-0.5" />
+          
+          {/* Link button */}
+          <ToolbarButton onClick={insertLink} icon={<FiLink size={14} />} title="Insert Link" />
           
           <div className="w-px h-5 bg-gray-300 dark:bg-gray-700 mx-0.5" />
           

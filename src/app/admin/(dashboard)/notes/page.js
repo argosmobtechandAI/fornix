@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import Modal from "@/components/Modal";
+import RichTextEditor from "@/components/RichTextEditor";
 import { BookOpen, FileText, ChevronRight, Plus } from "lucide-react";
 
 export default function NotesCoursesPage() {
@@ -61,7 +62,7 @@ export default function NotesCoursesPage() {
     setModal({ open: false, saving: false });
   }
 
-  async function saveNote({ course_id, subject_id, title, note_type, pdfFile }) {
+  async function saveNote({ course_id, subject_id, title, note_type, content, pdfFile }) {
     try {
       setModal((m) => ({ ...m, saving: true }));
       const fd = new FormData();
@@ -69,6 +70,7 @@ export default function NotesCoursesPage() {
       fd.set("subject_id", subject_id);
       fd.set("title", title);
       fd.set("note_type", note_type);
+      if (content) fd.set("content", content);
       if (pdfFile) fd.set("pdf", pdfFile);
 
       const res = await fetch("/api/admin/notes", { method: "POST", body: fd });
@@ -169,7 +171,7 @@ export default function NotesCoursesPage() {
           open={modal.open}
           onClose={closeModal}
           title="Add Note"
-          size="lg"
+          size="2xl"
         >
           <AddNoteForm
             courses={courses}
@@ -188,6 +190,7 @@ function AddNoteForm({ courses, saving, onCancel, onSubmit }) {
   const [subject_id, setSubjectId] = useState("");
   const [title, setTitle] = useState("");
   const [note_type, setNoteType] = useState("sample");
+  const [content, setContent] = useState("");
   const [pdfFile, setPdfFile] = useState(null);
   const [subjects, setSubjects] = useState([]);
   const [loadingSubjects, setLoadingSubjects] = useState(false);
@@ -222,8 +225,8 @@ function AddNoteForm({ courses, saving, onCancel, onSubmit }) {
     if (!course_id) return toast.error("Course is required");
     if (!subject_id) return toast.error("Subject is required");
     if (!title.trim()) return toast.error("Title is required");
-    if (!pdfFile) return toast.error("PDF is required");
-    onSubmit({ course_id, subject_id, title: title.trim(), note_type, pdfFile });
+    if (!content && !pdfFile) return toast.error("Either Note Content or PDF is required");
+    onSubmit({ course_id, subject_id, title: title.trim(), note_type, content, pdfFile });
   };
 
   return (
@@ -296,7 +299,21 @@ function AddNoteForm({ courses, saving, onCancel, onSubmit }) {
 
       <div>
         <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-          PDF File
+          Note Content (Rich Text)
+        </div>
+        <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
+          <RichTextEditor
+            value={content}
+            onChange={setContent}
+            label=""
+          />
+        </div>
+      </div>
+
+      <div>
+        <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center justify-between">
+          <span>PDF File (Optional)</span>
+          <span className="text-xs text-gray-500 font-normal italic">Overrides rich text if both provided</span>
         </div>
         <input
           type="file"
