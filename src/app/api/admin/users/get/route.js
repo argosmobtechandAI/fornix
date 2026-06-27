@@ -26,6 +26,8 @@ export async function GET(req) {
       query = query.eq("is_active", status === "active");
     }
 
+    query = query.order("created_at", { ascending: false });
+
     const { data, count, error } = await query.range(from, to);
 
     if (error) return Response.json({ success: false, error: error.message });

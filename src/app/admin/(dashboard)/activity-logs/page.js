@@ -96,14 +96,14 @@ export default function ActivityLogsPage() {
   }, [search, filterAction, filterType]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen">
       <Toaster position="top-right" />
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto">
 
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-8">
           <div className="flex items-center gap-4">
-            <div className="p-3 bg-indigo-500 rounded-xl shadow-lg">
+            <div className="p-3 bg-orange-600 dark:bg-orange-500 rounded-xl shadow-lg">
               <Activity className="text-white" size={28} />
             </div>
             <div>
@@ -134,7 +134,7 @@ export default function ActivityLogsPage() {
               placeholder="Search by description, name..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all shadow-sm text-sm"
+              className="w-full pl-10 pr-4 py-2.5 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all shadow-sm text-sm"
             />
           </div>
 
@@ -144,7 +144,7 @@ export default function ActivityLogsPage() {
             <select
               value={filterAction}
               onChange={(e) => setFilterAction(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all shadow-sm text-sm appearance-none"
+              className="w-full pl-10 pr-4 py-2.5 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all shadow-sm text-sm appearance-none"
             >
               <option value="">All Actions</option>
               <option value="course_cloned">Course Cloned</option>
@@ -161,7 +161,7 @@ export default function ActivityLogsPage() {
             <select
               value={filterType}
               onChange={(e) => setFilterType(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all shadow-sm text-sm appearance-none"
+              className="w-full pl-10 pr-4 py-2.5 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all shadow-sm text-sm appearance-none"
             >
               <option value="">All Types</option>
               <option value="course">Course</option>
@@ -184,7 +184,7 @@ export default function ActivityLogsPage() {
         {loading ? (
           <div className="flex justify-center items-center py-20">
             <div className="text-center">
-              <RefreshCw className="animate-spin text-indigo-500 mx-auto mb-4" size={40} />
+              <RefreshCw className="animate-spin text-orange-500 mx-auto mb-4" size={40} />
               <p className="text-gray-500 dark:text-gray-400">Loading activity logs...</p>
             </div>
           </div>

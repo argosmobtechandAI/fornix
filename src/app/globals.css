@@ -127,3 +127,8 @@ textarea:focus {
 .hover\:bg-blue-50:hover { background-color: var(--hanuman-50) !important; }
 .hover\:bg-blue-100:hover { background-color: var(--hanuman-100) !important; }
 .hover\:bg-blue-900\/20:hover { background-color: rgba(var(--hanuman-rgb-700), 0.2) !important; }
+/* Rich Text Editor List Styles Fix */
+.rnotes-content ul, .prose ul { list-style-type: disc !important; padding-left: 1.5rem !important; margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+.rnotes-content ol, .prose ol { list-style-type: decimal !important; padding-left: 1.5rem !important; margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+.rnotes-content li, .prose li { margin-bottom: 0.25rem !important; display: list-item !important; }
+
