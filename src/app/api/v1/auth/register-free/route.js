@@ -23,7 +23,7 @@ export async function POST(req) {
 
     const phone = mobile || mobile_no || null;
 
-    if (!name || !email || !password || !phone || !gender || !course_id) {
+    if (!name || !email || !phone || !gender || !course_id) {
       return Response.json(
         { success: false, error: "Missing required fields" },
         { status: 400 }
@@ -51,7 +51,9 @@ export async function POST(req) {
       );
     }
 
-    const password_hash = await bcrypt.hash(password, 10);
+    // Auto-generate a secure password if not provided (OTP-based auth)
+    const rawPassword = password || Math.random().toString(36).slice(-12) + Math.random().toString(36).slice(-12);
+    const password_hash = await bcrypt.hash(rawPassword, 10);
 
     const { data: user, error: createError } = await supabase
       .from("users")

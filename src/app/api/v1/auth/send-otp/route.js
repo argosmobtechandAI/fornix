@@ -20,19 +20,19 @@ export async function POST(request) {
     );
 
     // RATE LIMITING LOGIC
-    // 1. Check for OTPs requested in the last 2 minutes (120 seconds Cooldown)
-    const twoMinutesAgo = new Date(Date.now() - 120 * 1000).toISOString();
+    // 1. Check for OTPs requested in the last 30 seconds
+    const cooldownPeriod = new Date(Date.now() - 30 * 1000).toISOString();
     const { data: recentOtps, error: cooldownError } = await supabase
       .from('mobile_otps')
       .select('id, created_at')
       .eq('identifier', identifier)
-      .gte('created_at', twoMinutesAgo);
+      .gte('created_at', cooldownPeriod);
 
     if (cooldownError) {
       console.error('Rate Limit Check Error:', cooldownError);
     } else if (recentOtps && recentOtps.length > 0) {
       return NextResponse.json(
-        { success: false, error: 'Please wait 2 minutes before requesting a new OTP' },
+        { success: false, error: 'Please wait 30 seconds before requesting a new OTP' },
         { status: 429 }
       );
     }
@@ -47,7 +47,7 @@ export async function POST(request) {
 
     if (dailyLimitError) {
       console.error('Daily Limit Check Error:', dailyLimitError);
-    } else if (dailyOtpCount >= 15) {
+    } else if (dailyOtpCount >= 50) {
       return NextResponse.json(
         { success: false, error: 'Daily OTP limit reached. Please try again tomorrow' },
         { status: 429 }

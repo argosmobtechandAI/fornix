@@ -21,7 +21,7 @@ export async function GET(req) {
 
     const { data: courses, error: cErr } = await supabase
       .from("courses")
-      .select("*")
+      .select("*, course_categories(id, name)")
       .order("created_at", { ascending: false });
     if (cErr) throw cErr;
 

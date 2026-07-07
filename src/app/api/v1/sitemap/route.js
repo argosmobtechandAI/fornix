@@ -57,6 +57,9 @@ export async function GET(req) {
       addUrl(route, route === '/' ? '1.0' : '0.8', 'daily');
     });
 
+    // Add explicitly requested route
+    addUrl("/courses/Nursing", "0.9", "weekly");
+
     // Add dynamic course routes
     if (courses) {
       courses.forEach((course) => {
