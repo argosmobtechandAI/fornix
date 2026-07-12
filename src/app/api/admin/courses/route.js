@@ -25,6 +25,7 @@ export async function POST(req) {
         description: body.description,
         tutorial_video_url: body.tutorial_video_url || null,
         category_id: body.category_id || null,
+        features: body.features || [],
       },
     ])
     .select()

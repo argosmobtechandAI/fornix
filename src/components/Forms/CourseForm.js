@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Save, X, BookOpen } from "lucide-react";
+import { Save, X, BookOpen, Plus, Trash2 } from "lucide-react";
 
 export function CourseForm({ initial, saving, onCancel, onSubmit }) {
   const [name, setName] = useState(initial?.name || "");
@@ -10,6 +10,7 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
   const [iconFile, setIconFile] = useState(null);
   const [iconPreview, setIconPreview] = useState(initial?.icon_url || "");
   const [categoryId, setCategoryId] = useState(initial?.category_id || "");
+  const [features, setFeatures] = useState(initial?.features || []);
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -32,6 +33,7 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
       setTutorialVideoUrl(initial.tutorial_video_url || "");
       setCategoryId(initial.category_id || "");
       setIconPreview(initial.icon_url || "");
+      setFeatures(initial.features || []);
       setIconFile(null);
     }
   }, [initial]);
@@ -46,7 +48,23 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    onSubmit({ name, description, tutorial_video_url: tutorialVideoUrl, category_id: categoryId, iconFile });
+    // Filter out empty features
+    const cleanFeatures = features.filter((f) => f.trim() !== "");
+    onSubmit({ name, description, tutorial_video_url: tutorialVideoUrl, category_id: categoryId, features: cleanFeatures, iconFile });
+  }
+
+  function addFeature() {
+    setFeatures([...features, ""]);
+  }
+
+  function removeFeature(index) {
+    setFeatures(features.filter((_, i) => i !== index));
+  }
+
+  function updateFeature(index, value) {
+    const newFeatures = [...features];
+    newFeatures[index] = value;
+    setFeatures(newFeatures);
   }
 
   return (
@@ -147,6 +165,50 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
                 onChange={(e) => setTutorialVideoUrl(e.target.value)}
                 disabled={saving}
               />
+            </div>
+          </div>
+
+          {/* Course Features */}
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Course Features
+                <span className="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400">
+                  (optional, e.g. "Latest Syllabus", "Mock Tests")
+                </span>
+              </label>
+              <button
+                type="button"
+                onClick={addFeature}
+                className="flex items-center gap-1 text-sm font-medium text-orange-600 hover:text-orange-700 dark:text-orange-500 dark:hover:text-orange-400"
+              >
+                <Plus size={16} /> Add Feature
+              </button>
+            </div>
+            
+            <div className="space-y-2">
+              {features.map((feature, idx) => (
+                <div key={idx} className="flex gap-2 items-center">
+                  <input
+                    type="text"
+                    placeholder="e.g. 4,000+ Practice Questions"
+                    value={feature}
+                    onChange={(e) => updateFeature(idx, e.target.value)}
+                    className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                    disabled={saving}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => removeFeature(idx)}
+                    className="p-2 text-gray-400 hover:text-red-500 transition-colors"
+                  >
+                    <Trash2 size={18} />
+                  </button>
+                </div>
+              ))}
+              {features.length === 0 && (
+                <p className="text-sm text-gray-500 italic">No custom features added.</p>
+              )}
             </div>
           </div>
 

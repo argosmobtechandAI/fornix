@@ -50,6 +50,7 @@ export async function PUT(req, { params }) {
     description: body.description,
     tutorial_video_url: body.tutorial_video_url || null,
     category_id: body.category_id || null,
+    features: body.features || [],
     updated_at: new Date(),
   };
   if (slug) updateData.slug = slug;
