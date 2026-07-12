@@ -17,7 +17,7 @@ export default function CourseCategoriesPage() {
     saving: false,
   });
 
-  const [formData, setFormData] = useState({ name: "", description: "" });
+  const [formData, setFormData] = useState({ name: "", description: "", slug: "", hero_title: "", hero_subtitle: "", hero_image: "" });
 
   async function fetchCategories() {
     try {
@@ -53,12 +53,19 @@ export default function CourseCategoriesPage() {
   }, [search, categories]);
 
   const openCreate = () => {
-    setFormData({ name: "", description: "" });
+    setFormData({ name: "", description: "", slug: "", hero_title: "", hero_subtitle: "", hero_image: "" });
     setModal({ open: true, mode: "create", item: null });
   };
 
   const openEdit = (item) => {
-    setFormData({ name: item.name, description: item.description || "" });
+    setFormData({ 
+      name: item.name, 
+      description: item.description || "",
+      slug: item.slug || "",
+      hero_title: item.hero_title || "",
+      hero_subtitle: item.hero_subtitle || "",
+      hero_image: item.hero_image || ""
+    });
     setModal({ open: true, mode: "edit", item });
   };
 
@@ -181,17 +188,21 @@ export default function CourseCategoriesPage() {
         ) : (
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden w-full">
             <div className="hidden md:grid grid-cols-12 gap-4 p-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700/50 font-semibold text-sm text-gray-600 dark:text-gray-300 w-full">
-              <div className="col-span-4">Category Name</div>
-              <div className="col-span-6">Description</div>
+              <div className="col-span-3">Category Name</div>
+              <div className="col-span-3">Slug</div>
+              <div className="col-span-4">Hero Title</div>
               <div className="col-span-2 text-right">Actions</div>
             </div>
             {filtered.map((cat, idx) => (
               <div key={cat.id} className={`grid grid-cols-1 md:grid-cols-12 gap-4 p-4 items-center transition-colors duration-200 hover:bg-gray-50 dark:hover:bg-gray-700/50 ${idx < filtered.length - 1 ? 'border-b border-gray-200 dark:border-gray-700' : ''}`}>
-                <div className="col-span-4 font-semibold text-gray-900 dark:text-white">
+                <div className="col-span-3 font-semibold text-gray-900 dark:text-white">
                   {cat.name}
                 </div>
-                <div className="col-span-6 text-sm text-gray-500 dark:text-gray-400">
-                  {cat.description || "No description"}
+                <div className="col-span-3 text-sm text-gray-500 dark:text-gray-400">
+                  {cat.slug || "-"}
+                </div>
+                <div className="col-span-4 text-sm text-gray-500 dark:text-gray-400 line-clamp-1">
+                  {cat.hero_title || "-"}
                 </div>
                 <div className="col-span-2 flex justify-end gap-2">
                   <button onClick={() => openEdit(cat)} className="p-2 text-yellow-600 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 rounded-lg transition-colors">
@@ -212,30 +223,73 @@ export default function CourseCategoriesPage() {
           onClose={closeModal}
           title={`${modal.mode === "create" ? "Add New" : "Edit"} Category`}
         >
-          <form onSubmit={handleSubmit} className="p-4 space-y-6">
+          <form onSubmit={handleSubmit} className="p-4 space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Category Name *</label>
+                  <input
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={(e) => {
+                      const name = e.target.value;
+                      const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+                      setFormData({ ...formData, name, slug: modal.mode === 'create' ? slug : formData.slug });
+                    }}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
+                    placeholder="e.g. Doctors"
+                    disabled={modal.saving}
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Slug (URL snippet)</label>
+                  <input
+                    type="text"
+                    value={formData.slug}
+                    onChange={(e) => setFormData({ ...formData, slug: e.target.value })}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
+                    placeholder="e.g. doctors"
+                    disabled={modal.saving}
+                  />
+                </div>
+            </div>
+
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Category Name *</label>
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Hero Title</label>
               <input
                 type="text"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
-                placeholder="e.g. Doctors"
+                value={formData.hero_title}
+                onChange={(e) => setFormData({ ...formData, hero_title: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
+                placeholder="e.g. Your Global Career Starts Here"
                 disabled={modal.saving}
               />
             </div>
+
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Description</label>
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Hero Subtitle</label>
               <textarea
-                value={formData.description}
-                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
-                placeholder="Brief description of the category..."
-                rows={3}
+                value={formData.hero_subtitle}
+                onChange={(e) => setFormData({ ...formData, hero_subtitle: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
+                placeholder="Brief description of the category shown in hero..."
+                rows={2}
                 disabled={modal.saving}
               />
             </div>
+
+            <div className="space-y-2">
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Hero Image URL</label>
+              <input
+                type="text"
+                value={formData.hero_image}
+                onChange={(e) => setFormData({ ...formData, hero_image: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
+                placeholder="https://... (Image link)"
+                disabled={modal.saving}
+              />
+            </div>
+
             <div className="flex gap-3 pt-4">
               <button
                 type="button"

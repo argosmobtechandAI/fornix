@@ -21,6 +21,10 @@ export async function POST(req) {
         {
           name: body.name,
           description: body.description || null,
+          slug: body.slug || null,
+          hero_title: body.hero_title || null,
+          hero_subtitle: body.hero_subtitle || null,
+          hero_image: body.hero_image || null,
         },
       ])
       .select()
