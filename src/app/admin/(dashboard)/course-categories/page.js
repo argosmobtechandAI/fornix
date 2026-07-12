@@ -18,6 +18,8 @@ export default function CourseCategoriesPage() {
   });
 
   const [formData, setFormData] = useState({ name: "", description: "", slug: "", hero_title: "", hero_subtitle: "", hero_image: "" });
+  const [heroFile, setHeroFile] = useState(null);
+  const [heroPreview, setHeroPreview] = useState("");
 
   async function fetchCategories() {
     try {
@@ -54,6 +56,8 @@ export default function CourseCategoriesPage() {
 
   const openCreate = () => {
     setFormData({ name: "", description: "", slug: "", hero_title: "", hero_subtitle: "", hero_image: "" });
+    setHeroFile(null);
+    setHeroPreview("");
     setModal({ open: true, mode: "create", item: null });
   };
 
@@ -66,12 +70,24 @@ export default function CourseCategoriesPage() {
       hero_subtitle: item.hero_subtitle || "",
       hero_image: item.hero_image || ""
     });
+    setHeroFile(null);
+    setHeroPreview(item.hero_image || "");
     setModal({ open: true, mode: "edit", item });
   };
 
   const closeModal = () => {
     setModal({ open: false, mode: "create", item: null, saving: false });
+    setHeroFile(null);
+    setHeroPreview("");
   };
+
+  function handleHeroChange(e) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setHeroFile(file);
+    const url = URL.createObjectURL(file);
+    setHeroPreview(url);
+  }
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -93,6 +109,18 @@ export default function CourseCategoriesPage() {
 
       const json = await res.json();
       if (!json.success) throw new Error(json.error);
+
+      const savedCategory = json.data;
+
+      if (heroFile && savedCategory?.id) {
+        const fileData = new FormData();
+        fileData.append("id", savedCategory.id);
+        fileData.append("image", heroFile);
+        await fetch("/api/admin/course-categories/update-hero", {
+          method: "PUT",
+          body: fileData,
+        });
+      }
 
       toast.success(
         `Category ${modal.mode === "create" ? "created" : "updated"} successfully`
@@ -279,15 +307,38 @@ export default function CourseCategoriesPage() {
             </div>
 
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Hero Image URL</label>
-              <input
-                type="text"
-                value={formData.hero_image}
-                onChange={(e) => setFormData({ ...formData, hero_image: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500"
-                placeholder="https://... (Image link)"
-                disabled={modal.saving}
-              />
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Hero Image
+              </label>
+              <div className="flex items-center gap-4">
+                <div className="w-24 h-16 rounded-xl border border-dashed border-gray-300 dark:border-gray-600 flex items-center justify-center overflow-hidden bg-white dark:bg-gray-900 shrink-0">
+                  {heroPreview ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={heroPreview}
+                      alt="Hero preview"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="text-gray-400 text-xs">No image</div>
+                  )}
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label className="inline-flex items-center px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-200 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors self-start">
+                    <span>Upload Image</span>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleHeroChange}
+                      disabled={modal.saving}
+                    />
+                  </label>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Recommended: high quality, wide aspect ratio.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="flex gap-3 pt-4">

@@ -107,7 +107,7 @@ export default function page() {
           ? "/api/admin/courses"
           : `/api/admin/courses/${modal.item.id}`;
 
-      const { iconFile, ...data } = payload || {};
+      const { iconFile, imageFile, ...data } = payload || {};
 
       const res = await fetch(url, {
         method,
@@ -122,6 +122,16 @@ export default function page() {
 
       if (iconFile && savedCourse?.id) {
         await uploadCourseIcon(savedCourse.id, iconFile);
+      }
+      
+      if (imageFile && savedCourse?.id) {
+        const formData = new FormData();
+        formData.append("id", savedCourse.id);
+        formData.append("image", imageFile);
+        await fetch("/api/admin/courses/update-image", {
+          method: "PUT",
+          body: formData,
+        });
       }
 
       toast.success(

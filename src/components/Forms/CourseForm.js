@@ -9,6 +9,8 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
   const [tutorialVideoUrl, setTutorialVideoUrl] = useState(initial?.tutorial_video_url || "");
   const [iconFile, setIconFile] = useState(null);
   const [iconPreview, setIconPreview] = useState(initial?.icon_url || "");
+  const [imageFile, setImageFile] = useState(null);
+  const [imagePreview, setImagePreview] = useState(initial?.image_url || "");
   const [categoryId, setCategoryId] = useState(initial?.category_id || "");
   const [features, setFeatures] = useState(initial?.features || []);
   const [categories, setCategories] = useState([]);
@@ -33,8 +35,10 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
       setTutorialVideoUrl(initial.tutorial_video_url || "");
       setCategoryId(initial.category_id || "");
       setIconPreview(initial.icon_url || "");
+      setImagePreview(initial.image_url || "");
       setFeatures(initial.features || []);
       setIconFile(null);
+      setImageFile(null);
     }
   }, [initial]);
 
@@ -46,11 +50,19 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
     setIconPreview(url);
   }
 
+  function handleImageChange(e) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setImageFile(file);
+    const url = URL.createObjectURL(file);
+    setImagePreview(url);
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     // Filter out empty features
     const cleanFeatures = features.filter((f) => f.trim() !== "");
-    onSubmit({ name, description, tutorial_video_url: tutorialVideoUrl, category_id: categoryId, features: cleanFeatures, iconFile });
+    onSubmit({ name, description, tutorial_video_url: tutorialVideoUrl, category_id: categoryId, features: cleanFeatures, iconFile, imageFile });
   }
 
   function addFeature() {
@@ -212,43 +224,87 @@ export function CourseForm({ initial, saving, onCancel, onSubmit }) {
             </div>
           </div>
 
-          {/* Course Icon Field */}
-          <div className="space-y-2">
-            <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
-              Course Icon
-              <span className="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400">
-                (optional)
-              </span>
-            </label>
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-xl border border-dashed border-gray-300 dark:border-gray-600 flex items-center justify-center overflow-hidden bg-white dark:bg-gray-900">
-                {iconPreview || initial?.icon_url ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={iconPreview || initial?.icon_url}
-                    alt="Course icon preview"
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <BookOpen className="text-gray-400" size={28} />
-                )}
-              </div>
-              <div className="flex flex-col gap-2">
-                <label className="inline-flex items-center px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-200 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                  <span>Upload Icon</span>
-                  <input
-                    type="file"
-                    accept="image/*"
-                    className="hidden"
-                    onChange={handleIconChange}
-                    disabled={saving}
-                  />
-                </label>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  Recommended: square PNG/JPG/WebP, max 5MB.
-                </p>
+          {/* Course Icon and Image Fields - Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            {/* Course Icon */}
+            <div className="space-y-2">
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Course Icon
+                <span className="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400">
+                  (optional, small square)
+                </span>
+              </label>
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 rounded-xl border border-dashed border-gray-300 dark:border-gray-600 flex items-center justify-center overflow-hidden bg-white dark:bg-gray-900 shrink-0">
+                  {iconPreview || initial?.icon_url ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={iconPreview || initial?.icon_url}
+                      alt="Course icon preview"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <BookOpen className="text-gray-400" size={28} />
+                  )}
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label className="inline-flex items-center px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-200 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors self-start">
+                    <span>Upload Icon</span>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleIconChange}
+                      disabled={saving}
+                    />
+                  </label>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Recommended: square PNG/JPG.
+                  </p>
+                </div>
               </div>
             </div>
+
+            {/* Course Image */}
+            <div className="space-y-2">
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Course Image
+                <span className="ml-1 text-xs font-normal text-gray-500 dark:text-gray-400">
+                  (optional, used in cards)
+                </span>
+              </label>
+              <div className="flex items-center gap-4">
+                <div className="w-24 h-16 rounded-xl border border-dashed border-gray-300 dark:border-gray-600 flex items-center justify-center overflow-hidden bg-white dark:bg-gray-900 shrink-0">
+                  {imagePreview || initial?.image_url ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={imagePreview || initial?.image_url}
+                      alt="Course image preview"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <BookOpen className="text-gray-400" size={28} />
+                  )}
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label className="inline-flex items-center px-4 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-200 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors self-start">
+                    <span>Upload Image</span>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={handleImageChange}
+                      disabled={saving}
+                    />
+                  </label>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Recommended: 16:9 aspect ratio.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           {/* Action Buttons */}
