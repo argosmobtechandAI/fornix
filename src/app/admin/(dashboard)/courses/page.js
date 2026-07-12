@@ -128,10 +128,14 @@ export default function page() {
         const formData = new FormData();
         formData.append("id", savedCourse.id);
         formData.append("image", imageFile);
-        await fetch("/api/admin/courses/update-image", {
+        const imgRes = await fetch("/api/admin/courses/update-image", {
           method: "PUT",
           body: formData,
         });
+        const imgJson = await imgRes.json();
+        if (!imgJson.success) {
+          throw new Error("Failed to upload course image: " + imgJson.error);
+        }
       }
 
       toast.success(
